@@ -1,0 +1,162 @@
+/*RESPONSIVIDADE CELULAR*/
+
+@media screen and (max-width: 992px) {
+
+    .containder .cadastro {
+        display: none;
+    }
+
+    .containder .linha-divi {
+        display: none;
+    }
+
+    .containder .login .Registrar {
+        display: block;
+    }
+
+    .containder .icon {
+        font-family: 'Lexend';
+        font-style: normal;
+        font-weight: 10;
+        font-size: 16px;
+        line-height: 20px;
+        color: #FFFFFF;
+        display: flex;
+        gap: 1rem;
+        cursor: pointer;
+    }
+
+    .containder .login .contas h5 {
+        font-family: 'Lexend';
+        font-style: normal;
+        font-weight: 10;
+        font-size: 16px;
+        line-height: 20px;
+        color: #FFFFFF;
+    }
+
+    .containder .login .contas {
+        font-family: 'Lexend';
+        font-style: normal;
+        font-weight: 10;
+        font-size: 16px;
+        line-height: 20px;
+        color: #FFFFFF;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 30px;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+
+    .containder{
+        background-color: transparent;
+        box-shadow: none;
+        border: none
+        
+        
+        ;
+    }
+
+    .containder .login .usuario fieldset {
+        width: 100%;
+        height: 40px;
+    }
+
+    .containder .login .senha fieldset {
+        width: 100%;
+        height: 40px;
+    }
+
+    .containder .login .senha fieldset .fa-eye {
+        display: none
+    }
+
+    .containder .login .dados {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .containder .login h1 {
+        font-size: 24px;
+    }
+
+}
+
+@media screen and (max-height: 500px) {
+
+    .containder .cadastro {
+        gap: 0;
+        transition: 500ms;
+    }
+
+    .containder .cadastro .contas {
+        padding: 10px;
+        transition: 500ms;
+    }
+
+    .containder .login .btn {
+        width: 150px;
+        height: 40px;
+        margin-top: 30px;
+        margin-top: 0;
+    }
+}
+
+@media screen and (max-width: 350px) {
+
+    .containder .login .btn {
+        width: 150px;
+        height: 40px;
+        margin-top: 5px;
+    }
+
+    .containder .login .senha input {
+        border: none;
+        background-color: transparent;
+        outline: none;
+        color: white;
+        margin-left: 20px;
+        width: 80%;
+    }
+
+    .containder .login .usuario input {
+        border: none;
+        background-color: transparent;
+        outline: none;
+        color: white;
+        margin-left: 20px;
+        width: 80%;
+    }
+
+    .containder .login .dados .esqueceu-senha p {
+        display: none;
+    }
+
+    .esqueceu-senha {
+        padding-top: 25px;
+        display: block;
+    }
+
+    .esqueceu-senha p {
+        color: white;
+    }
+
+    .containder .login h5 {
+        font-size: 20px;
+    }
+
+}
+
+@media screen and (max-width: 280px) {
+
+    .containder .login h5 {
+        font-size: 16px;
+    }
+}

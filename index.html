@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de Login</title>
+
+    <!-- Links -->
+    <link rel="stylesheet" href="Assets/CSS/style.css">
+    <link rel="stylesheet" href="Assets/CSS/responsivo.css">
+    <link rel="stylesheet" href="" data-href="Assets/CSS/dark.css" id="link-pretoebranco">
+    <script src="Assets/JS/script.js" defer></script>
+    <script src="https://kit.fontawesome.com/7c3aef27c1.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.js"
+        integrity="sha512-6DC1eE3AWg1bgitkoaRM1lhY98PxbMIbhgYCGV107aZlyzzvaWCW1nJW2vDuYQm06hXrW0As6OGKcIaAVWnHJw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://kit.fontawesome.com/7c3aef27c1.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <!-- BOTÃO DE MOSTRAR LOGIN -->
+    <div class="botao">
+        <button class="btn animate__animated animate__zoomInDown" id="Clicar">ABRIR LOGIN</button>
+    </div>
+
+    <!-- TELA DE LOGIN -->
+
+    <div class="containder animate__animated animate__slideInDown">
+
+    <!-- CADASTRO -->
+
+        <div class="cadastro">
+            <div>
+                <h1 id="titulo">Novo Login</h1>
+                <div class="linha"></div>
+            </div>
+
+            <button class="btn" id="cadastrar">CRIAR CONTA</button>
+
+            <!--  CADASTRO - ENTRAR COM OUTRAS CONTA -->
+
+            <div class="contas">
+                <h5>Entrar com</h5>
+                <div class="icon">
+                    <i class="fa-brands fa-github"></i>
+                    <i class="fa-brands fa-google"></i>
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-apple"></i>
+                </div>
+            </div>
+        </div>
+
+        <!-- LINHA QUE DIVIDE CADASTRO E LOGIN -->
+
+        <div class="linha-divi"></div>
+
+        <!-- LOGIN -->
+
+        <div class="login">
+            <h1 class="logar">LOGIN</h1>
+            <h5 class="logar">Bem vindo de volta</h5>
+            <div class="linha"></div>
+
+            <!-- LOGIN - Inputs -->
+            
+            <div class="usuario animate__animated animate__fadeInDown">
+                <fieldset>
+                    <i class="fa-solid fa-user"></i>
+                    <div class="linha-input"></div>
+                    <input type="text" placeholder="Usuario" required>
+                </fieldset>
+            </div>
+
+            <div class="senha animate__animated animate__fadeInDown">
+                <fieldset>
+                    <i class="fa-solid fa-lock"></i>
+                    <div class="linha-input"></div>
+                    <input type="password" name="senha" id="senha" placeholder="Senha" required>
+                </fieldset>
+            </div>
+
+
+            <!-- LOGIN - Lembrar \ esqueceu senha -->
+
+            <div class="dados">
+                <div class="lembrar">
+                    <input type="checkbox" name="lembrar" id="lembrar">
+                    <label for="lembrar">Lembrar</label>
+                </div>
+                <div class="esqueceu-senha">
+                    <p>Esqueceu a senha?</p>
+                </div>
+            </div>
+
+            
+            <!-- OUTROS -->
+
+            <button type="submit" class="btn logar">ENTRAR</button>
+            <div class="esqueceu-senha hidden">
+                <p>Esqueceu a senha?</p>
+            </div>
+
+            <div class="new-Cadastro hidden">
+                <p>Não tem uma conta? <a href="#">Cadastre-se</a></p>
+            </div>
+
+            <div class="contas hidden">
+                <h5>Entrar com</h5>
+                <div class="icon">
+                    <i class="fa-brands fa-github"></i>
+                    <i class="fa-brands fa-google"></i>
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-apple"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

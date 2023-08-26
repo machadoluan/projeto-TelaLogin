@@ -1,0 +1,363 @@
+/*----------------------------- [ FONTS - Righteous -Lexend ]---------------------------------------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400&family=Righteous&display=swap');
+
+
+/*----------------------------- [ CONFIG PADRÃO ]---------------------------------------*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.hidden {
+    display: none;
+}
+
+
+/*----------------------------- [ CONFIG DO BODY ]---------------------------------------*/
+
+
+body {
+    height: 90vh;
+    background: linear-gradient(-45deg, #EE7752, #3f3ce7, #0080af, #23D5AB);
+    background-size: 400% 400%;
+    -webkit-animation: Gradient 15s ease infinite;
+    -moz-animation: Gradient 15s ease infinite;
+    animation: Gradient 15s ease infinite;
+    width: 100vw;
+    height: 100vh;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@-webkit-keyframes Gradient {
+    0% {
+        background-position: 0% 50%
+    }
+
+    50% {
+        background-position: 100% 50%
+    }
+
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+@-moz-keyframes Gradient {
+    0% {
+        background-position: 0% 50%
+    }
+
+    50% {
+        background-position: 100% 50%
+    }
+
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+@keyframes Gradient {
+    0% {
+        background-position: 0% 50%
+    }
+
+    50% {
+        background-position: 100% 50%
+    }
+
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+/*------------------------ [ BOTÃO DE MOSTRAR LOGIN ] ---------------------------------*/
+
+.botao {
+    padding-bottom: 30px;
+}
+
+/*----------------------------- [ TELA DE LOGIN ]---------------------------------------*/
+
+.containder {
+    width: 80%;
+    height: 70%;
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(13.5px);
+    -webkit-backdrop-filter: blur(13.5px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    display: none;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/*----------------------------- [ CADASTRO ]---------------------------------------*/
+
+.containder .cadastro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.containder .cadastro #logo {
+    font-family: 'Righteous';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 62px;
+    letter-spacing: -0.005em;
+    color: white;
+}
+
+.containder .cadastro #titulo {
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 62px;
+    letter-spacing: -0.005em;
+    color: #FFFFFF;
+}
+
+.containder .cadastro .linha {
+    width: 122px;
+    height: 2px;background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 53%);
+}
+
+/*----------------------------- [ CADASTRO - ENTRAR COM OUTRAS CONTAS ]---------------------------------------*/
+
+.containder .cadastro .contas {
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 10;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    padding-top: 60px;
+}
+
+.containder .cadastro .contas h5 {
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 10;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+}
+
+.containder .cadastro .icon {
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 10;
+    font-size: 25px;
+    line-height: 20px;
+    color: #FFFFFF;
+    display: flex;
+    gap: 1rem;
+    cursor: pointer;
+}
+.containder .cadastro .icon i{
+    transition: 500ms;
+}
+.containder .cadastro .icon i:hover{
+    transform: scale(1.3);
+}
+
+/*----------------------------- [ LINHA QUE DIVIDE CADASTRO E LOGIN ]---------------------------------------*/
+
+.containder .linha-divi {
+    width: 2px;
+    height: 80%;
+    background-color: white;
+    border-radius: 30px;
+}
+
+/*----------------------------- [ LOGIN ]---------------------------------------*/
+
+.containder .login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.containder .login h1 {
+    font-family: 'Righteous';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 62px;
+    letter-spacing: -0.005em;
+    color: white;
+}
+
+.containder .login h5 {
+    font-family: Lexend;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 24px;
+    line-height: 62px;
+    letter-spacing: -0.005em;
+    color: white;
+}
+
+/*----------------------------- [ LOGIN - Inputs ]---------------------------------------*/
+
+
+.containder .login .usuario fieldset {
+    display: flex;
+    align-items: center;
+    width: 350px;
+    height: 40px;
+    background: rgba(217, 217, 217, 0.4);
+    border-radius: 34px;
+    margin-bottom: 20px;
+    border: none;
+
+}
+
+.containder .login .usuario i {
+    font-size: 20px;
+    color: white;
+    padding-left: 20px;
+}
+
+.containder .login .usuario .linha-input {
+    height: 20px;
+    width: 1px;
+    background-color: white;
+    margin-left: 10px;
+}
+
+.containder .login .usuario input {
+    border: none;
+    background-color: transparent;
+    outline: none;
+    color: white;
+    margin-left: 20px;
+}
+
+.containder .login .usuario input::placeholder {
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 200;
+    color: #FFFFFF;
+
+}
+
+.containder .login .senha fieldset {
+    display: flex;
+    align-items: center;
+    width: 350px;
+    height: 40px;
+    background: rgba(217, 217, 217, 0.4);
+    border-radius: 34px;
+    margin-bottom: 20px;
+    border: none;
+
+}
+
+.containder .login .senha i {
+    font-size: 20px;
+    color: white;
+    padding-left: 20px;
+}
+
+.containder .login .senha .linha-input {
+    height: 20px;
+    width: 1px;
+    background-color: white;
+    margin-left: 10px;
+}
+
+.containder .login .senha input {
+    border: none;
+    background-color: transparent;
+    outline: none;
+    color: white;
+    margin-left: 20px;
+    width: 70%;
+}
+
+.containder .login .senha input::placeholder {
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 200;
+    color: #FFFFFF;
+
+}
+
+/*----------------------------- [ LOGIN - Lembrar \ esqueceu senha ]---------------------------------------*/
+
+
+.containder .login .dados {
+    display: flex;
+    width: 350px;
+    justify-content: space-between;
+    padding: 0 20px;
+    align-items: center;
+}
+
+.containder .login .dados .lembrar {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.containder .login .dados .lembrar label {
+    color: white;
+    font-size: 12px;
+}
+
+.containder .login .dados .esqueceu-senha p {
+    color: white;
+    font-size: 12px;
+}
+
+.containder .login .dados .esqueceu-senha p:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/*----------------------------- [ Config Botões ]---------------------------------------*/
+
+
+.btn {
+    width: 250px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid #FFFFFF;
+    border-radius: 30px;
+    font-family: 'Lexend';
+    font-weight: 200;
+    font-size: 16px;
+    line-height: 25px;
+    letter-spacing: 0.185em;
+    color: #FFFFFF;
+    cursor: pointer;
+    margin-top: 50px;
+    transition: 500ms;
+}
+
+.containder .btn:hover {
+    transform: scale(1.04);
+    background-color: #0080af;
+    transition: all 2s ease-in-out;
+}
+
+/*----------------------------- [FIM 💙 FEITO POR - LUAN MACHADO ]---------------------------------------*/
